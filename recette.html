@@ -1,0 +1,94 @@
+<!--Balise de début de document HTML-->
+<!DOCTYPE HTML>
+<!--Balise englobant tout le code-->
+<html lang="fr">
+  <head>
+    <!--Titre de la page dans l'onglet du navigateur-->
+    <title>Gateau au chocolat</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="recette.css">
+  </head>
+
+  <!--Corps de la page-->
+  <body>
+      <div class="contenu">
+      <!--2 classes pour le div de categorie-->
+      <div class="centre categorie">
+        <p class="categorie">Recette</p>
+      </div>
+      <!--Titre 1-->
+      <h1 >Gateau au chocolat</h1>
+      <div class="separateur">
+      </div>
+      <div class="centre">
+        <p class="description">"Cette recette facile est un grand classique. Elle fera plaisir aux gourmands et à vos enfants et petits-enfants"</p>
+      </div>
+
+      <!--La DIV relative permet de positionner ses éléments en absolu-->
+      <div class="info">
+        <!--Image locale-->
+        <!--<img class="centre info"  src="gateau.jpg">-->
+        <!--Image Internet-->
+        <img class="centre info"  src="https://jonathanroux.com/gateau.jpg">
+        <!--Tableau avec bordures, sous l'image-->
+        <!---->
+        <!--Table en bas de l'image-->
+        <table class="info">
+          <tr>
+            <th>Difficulté</th>
+            <th>Préparation</th>
+            <th>Cuisson</th>
+            <th>Temps total</th>
+          </tr>
+          <tr>
+            <td>Facile</td>
+            <td>10 min</td>
+            <td>25 min</td>
+            <td>35 min</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <!--Creation d'une sous-div pour réaffecter le overflow auto général aux 2 colonnes-->
+      <div>
+        <div class="colonne1 colonne">
+          <h2>Ingrédients</h2>
+          <!-- LISTES
+            Liste non ordonnée : ul (unordered list)
+            Liste ordonnée : ol (ordered list)
+            Elément : li (list item)
+          -->
+          <div class="ingredients">
+            <p>Chocolat noir : 200 gr</p>
+            <p>Sucre : 150 gr</p>
+            <p>Beurre : 200 gr</p>
+            <p>Oeufs : 4</p>
+            <p>Farine : 80 gr</p>
+          </div>
+        </div>
+        <div class="colonne2 colonne">
+          <h2>Préparation</h2>
+          <!--
+          <ol>
+            <li>Faire fondre le chocolat avec le beurre</li>
+            <li>Mélanger le sucre, les oeufs et la farine</li>
+            <li>Mélanger le tout pour faire une pate</li>
+            <li>Mettre au four</li>
+          </ol>
+          -->
+          <table class="preparation">
+            <tr><td><p class="numero">1</p></td><td class="preparation_etape">Faire fondre le chocolat avec le beurre</td></tr>
+            <tr><td><p class="numero">2</p></td><td class="preparation_etape">Mélanger le sucre, les oeufs et la farinee</td></tr>
+            <tr><td><p class="numero">3</p></td><td class="preparation_etape">Mélanger le tout pour faire une pate</td></tr>
+            <tr><td><p class="numero">4</p></td><td class="preparation_etape">Mettre au four</td></tr>
+
+            <tr><td><p class="numero">1</p></td><td class="preparation_etape">Faire fondre le chocolat avec le beurre</td></tr>
+            <tr><td><p class="numero">2</p></td><td class="preparation_etape">Mélanger le sucre, les oeufs et la farinee</td></tr>
+            <tr><td><p class="numero">3</p></td><td class="preparation_etape">Mélanger le tout pour faire une pate</td></tr>
+            <tr><td><p class="numero">4</p></td><td class="preparation_etape">Mettre au four</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
